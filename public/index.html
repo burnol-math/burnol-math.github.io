@@ -79,7 +79,8 @@
   }
   .project-card p a {
     color: #3498db; /* Bright blue for visibility */
-    text-decoration: underline; /* Underline for emphasis */
+    /* text-decoration: underline; /* Underline for emphasis */
+    text-decoration: none;
     font-weight: bold; /* Bold to stand out */
     transition: color 0.2s; /* Smooth hover transition */
   }
@@ -142,31 +143,41 @@
         <p>Numerical implementation
         (using <a href="https://mpmath.org">mpmath</a>) of the series
         explained in
-        <a href="https://arxiv.org/abs/2603.29998"><i>Some geometric series for Euler’s constant</i></a>.</p>
+        <a href="https://arxiv.org/abs/2603.29998"><i>Some geometric series for Euler’s constant</i></a> (2026-03-31).</p>
     </div>
     <div class="project-card">
       <a href="https://burnolmath.gitlab.io/irwin">
         <h2>Irwin</h2>
       </a>
-        <p>This one-page site serves as a brief mathematical introduction to
-        the formulas discovered by the author (and published in 2024)
-        regarding Kempner-Irwin harmonic series. It contains links to
+        <p>This serves as a brief mathematical introduction to
+        Kempner-Irwin harmonic series, and to the formulas by the author
+        regarding them, which allow computational algorithms distinct from the
+        Baillie and Schmelzer-Baillie ones (links to the latter
+        two are given on the page).</p>
+        <p>It also serves as front page to
         the <a href="https://gitlab.com/burnolmath/irwin">repository</a> where
-        one finds <a href="https://sagemath.org">SageMath</a> scripts
-        implementing them, and also provides links to the research papers.</p>
+        one finds some <a href="https://sagemath.org">SageMath</a> scripts
+        implementing these formulas.</p>
+        <p>And it provides links to the further papers by
+        the author (limited to year 2024) on this and related topics.</p>
     </div>
     <!-- Add more project cards as needed -->
     <div class="project-card">
       <a href="https://gitlab.com/burnolmath/kempner">
         <h2>Kempner</h2>
       </a>
-        <p>Python with <a href="https://mpmath.org">mpmath</a> code
-        for arbitrary base and set of excluded digits.</p>
-        <p>Legacy Maple code (in its 2024 version with English comments) as
-        used by the author some years ago.  Superseded by the
-        April 2026 addition of Python code, and earlier by the
-        SageMath scripts from <a href="/irwin">Irwin</a> in the case
-        of a single excluded digit.</p>
+        <p>Links directly (no front page) to
+        the <a href="https://gitlab.com/burnolmath/kempner">GitLab
+        repository</a> which provides Python code
+        using <a href="https://mpmath.org">mpmath</a> (for arbitrary bases and
+        sets of excluded digits) in addition to legacy Maple code (in its 2024
+        version with English comments) as used by the author some years ago.
+        </p>
+        <p>
+        The Maple code is superseded by the April 2026 Python+mpmath code, and
+        was already so earlier by the May 2025 SageMath scripts at
+        the <a href="https://gitlab.com/burnolmath/irwin">Irwin repository</a>
+        (only for the case of a single excluded digit).</p>
     </div>
   </div>
   <footer>
